@@ -5,437 +5,57 @@ exports[`renders the app 1`] = `
   className="App"
 >
   <div
+    className="Modal"
+  >
+    <div
+      className="Modal-dialog"
+    >
+      <div
+        className="FileForm"
+      >
+        <div
+          style={
+            Object {
+              "fontSize": "1.25rem",
+              "marginBottom": "1rem",
+            }
+          }
+        >
+          New Playlist
+        </div>
+        <div
+          style={
+            Object {
+              "marginBottom": "1rem",
+            }
+          }
+        >
+          Choose a playlist file to start
+        </div>
+        <form
+          className="FileForm-form"
+        >
+          <input
+            className="FileForm-input"
+            disabled={true}
+            type="text"
+            value="foobar"
+          />
+          <input
+            className="FileForm-button"
+            type="submit"
+            value=">"
+          />
+        </form>
+      </div>
+    </div>
+  </div>
+  <div
     className="App-col1"
   >
     <div
       className="Draft"
-    >
-      <div
-        className="Draft-col1"
-      >
-        <div
-          className="Draft-header"
-        >
-          <div
-            style={
-              Object {
-                "color": "rgba(255,255,255,.5)",
-              }
-            }
-          >
-            <span>
-              
-            </span>
-             ▪ 
-            <span>
-              20
-               
-              tracks
-            </span>
-          </div>
-          <input
-            className="DraftNameInput"
-            onChange={[Function]}
-            type="text"
-            value={undefined}
-          />
-        </div>
-        <div
-          className="Draft-table"
-        >
-          <div
-            className="Draft-table-header"
-          >
-            <div
-              style={
-                Object {
-                  "flex": "none",
-                  "width": "13.5rem",
-                }
-              }
-            >
-              Name
-            </div>
-            <div
-              style={
-                Object {
-                  "flex": "auto",
-                }
-              }
-            >
-              Artist
-            </div>
-          </div>
-          <div
-            className="Draft-table-body"
-          >
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Bodak Yellow
-              </div>
-              <div>
-                Cardi B
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                DNA.
-              </div>
-              <div>
-                Kendrick Lamar
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Green Light
-              </div>
-              <div>
-                Lorde
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Love Galore
-              </div>
-              <div>
-                SZA
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                XO TOUR Llif3
-              </div>
-              <div>
-                Lil Uzi Vert
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Chanel
-              </div>
-              <div>
-                Frank Ocean
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Dum Surfer
-              </div>
-              <div>
-                King Krule
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Mask Off
-              </div>
-              <div>
-                Future
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Frontline
-              </div>
-              <div>
-                Kelela
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Boys
-              </div>
-              <div>
-                Charlie XCX
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                HUMBLE.
-              </div>
-              <div>
-                Kendrick Lamar
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Passionfruit
-              </div>
-              <div>
-                Drake
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                The Story of O.J.
-              </div>
-              <div>
-                JAY-Z
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Real Death
-              </div>
-              <div>
-                Mount Eerie
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                The Gate
-              </div>
-              <div>
-                Björk
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Magnolia
-              </div>
-              <div>
-                Playboi Carti
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Thinking of a Place
-              </div>
-              <div>
-                The War on Drugs
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Baby Luv
-              </div>
-              <div>
-                Nilüfer Yanya
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                IDK About You
-              </div>
-              <div>
-                Fever Ray
-              </div>
-            </div>
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Slide
-              </div>
-              <div>
-                Calvin Harris
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        className="Draft-col2"
-      />
-    </div>
+    />
   </div>
   <div
     className="App-col2"

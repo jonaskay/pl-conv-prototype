@@ -11,6 +11,11 @@ it('renders a playlist draft', () => {
   expect(component).toMatchSnapshot();
 });
 
+it('renders an empty div when items are missing', () => {
+  const component = shallow(<Draft />);
+  expect(component).toMatchSnapshot();
+});
+
 it('updates playlist name after name change', () => {
   const component = mount(<Draft items={jsonData.slice(0, 1)} />)
   component.find('input').simulate('change', { target: { value: 'Foobar' } });

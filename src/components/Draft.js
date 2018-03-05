@@ -25,6 +25,10 @@ class Draft extends React.Component {
   }
 
   render() {
+    if (!this.props.items) {
+      return <div className="Draft"></div>;
+    }
+
     return (
       <div className="Draft">
         <div className="Draft-col1">

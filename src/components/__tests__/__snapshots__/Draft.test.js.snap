@@ -91,6 +91,12 @@ exports[`renders a playlist draft 1`] = `
 </div>
 `;
 
+exports[`renders an empty div when items are missing 1`] = `
+<div
+  className="Draft"
+/>
+`;
+
 exports[`updates playlist name after name change 1`] = `
 <Draft
   items={

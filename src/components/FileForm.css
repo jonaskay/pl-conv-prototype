@@ -1,0 +1,38 @@
+.FileForm {
+  text-align: center;
+}
+
+.FileForm-form {
+  display: flex;
+  width: 100%;
+}
+
+.FileForm-input {
+  background: #616161;
+  border: none;
+  border-radius: .25rem;
+  box-shadow: 
+    0 1px 3px 0 rgba(0,0,0,.2), 
+    0 1px 1px 0 rgba(0,0,0,.14), 
+    0 2px 1px -1px rgba(0,0,0,.12);
+  color: rgba(255,255,255,0.7);
+  flex: auto;
+  margin-right: .5rem;
+  padding: .5rem;
+}
+
+.FileForm-button {
+  background: #536DFE;
+  border: none;
+  border-radius: .25rem;
+  box-shadow: 
+    0 1px 3px 0 rgba(0,0,0,.2), 
+    0 1px 1px 0 rgba(0,0,0,.14), 
+    0 2px 1px -1px rgba(0,0,0,.12);
+  color: #FFF;
+  cursor: pointer;
+  flex: none;
+  font-weight: 700;
+  outline: none;
+  padding: .5rem .75rem;
+}

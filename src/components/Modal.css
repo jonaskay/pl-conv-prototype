@@ -1,0 +1,27 @@
+.Modal {
+  align-items: center;
+  background: rgba(0,0,0,.288);
+  bottom: 0;
+  display: flex;
+  left: 0;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.Modal-dialog {
+  background: #424242;
+  border-radius: .5rem;
+  box-shadow: 
+    0 11px 15px -7px rgba(0,0,0,.2), 
+    0 24px 38px 3px rgba(0,0,0,.14), 
+    0 9px 46px 8px rgba(0,0,0,.12);
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 20rem;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+}
