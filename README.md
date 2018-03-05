@@ -28,6 +28,11 @@ Start the test runner:
 yarn test
 ```
 
+## To-do
+
+* Ability to authenticate with Spotify and Google
+* Ability to create playlists to Spotify and YouTube 
+
 ## Acknowledgments
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
