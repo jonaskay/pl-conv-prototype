@@ -9,11 +9,7 @@ class Draft extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {name: '', selectedTrack: null};
-  }
-
-  handleNameChange = (e) => {
-    this.setState({name: e.target.value});
+    this.state = {selectedTrack: null};
   }
 
   handleItemClick = (value) => {
@@ -34,11 +30,11 @@ class Draft extends React.Component {
         <div className="Draft-col1">
           <div className="Draft-header">
             <div style={{color: 'rgba(255,255,255,.5)'}}>
-              <span>{this.state.name}</span> 
+              <span>{this.props.name}</span> 
               &nbsp;&#9642;&nbsp;
               <DraftItemCounter items={this.props.items} />
             </div>
-            <DraftNameInput name={this.props.name} onChange={this.handleNameChange} />
+            <DraftNameInput name={this.props.name} onChange={this.props.onNameChange} />
           </div>          
           <div className="Draft-table">
             <div className="Draft-table-header">

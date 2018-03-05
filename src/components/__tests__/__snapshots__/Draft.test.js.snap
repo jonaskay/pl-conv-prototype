@@ -34,9 +34,7 @@ exports[`renders a playlist draft 1`] = `
           }
         />
       </div>
-      <DraftNameInput
-        onChange={[Function]}
-      />
+      <DraftNameInput />
     </div>
     <div
       className="Draft-table"
@@ -97,145 +95,6 @@ exports[`renders an empty div when items are missing 1`] = `
 />
 `;
 
-exports[`updates playlist name after name change 1`] = `
-<Draft
-  items={
-    Array [
-      Object {
-        "artist": "Cardi B",
-        "id": 1,
-        "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
-        "name": "Bodak Yellow",
-        "spotify_id": "2771LMNxwf62FTAdpJMQfM",
-        "youtube_id": "PEGccV-NOm8",
-      },
-    ]
-  }
->
-  <div
-    className="Draft"
-  >
-    <div
-      className="Draft-col1"
-    >
-      <div
-        className="Draft-header"
-      >
-        <div
-          style={
-            Object {
-              "color": "rgba(255,255,255,.5)",
-            }
-          }
-        >
-          <span>
-            Foobar
-          </span>
-           ▪ 
-          <DraftItemCounter
-            items={
-              Array [
-                Object {
-                  "artist": "Cardi B",
-                  "id": 1,
-                  "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
-                  "name": "Bodak Yellow",
-                  "spotify_id": "2771LMNxwf62FTAdpJMQfM",
-                  "youtube_id": "PEGccV-NOm8",
-                },
-              ]
-            }
-          >
-            <span>
-              1
-               
-              track
-            </span>
-          </DraftItemCounter>
-        </div>
-        <DraftNameInput
-          onChange={[Function]}
-        >
-          <input
-            className="DraftNameInput"
-            onChange={[Function]}
-            type="text"
-          />
-        </DraftNameInput>
-      </div>
-      <div
-        className="Draft-table"
-      >
-        <div
-          className="Draft-table-header"
-        >
-          <div
-            style={
-              Object {
-                "flex": "none",
-                "width": "13.5rem",
-              }
-            }
-          >
-            Name
-          </div>
-          <div
-            style={
-              Object {
-                "flex": "auto",
-              }
-            }
-          >
-            Artist
-          </div>
-        </div>
-        <div
-          className="Draft-table-body"
-        >
-          <DraftItem
-            item={
-              Object {
-                "artist": "Cardi B",
-                "id": 1,
-                "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
-                "name": "Bodak Yellow",
-                "spotify_id": "2771LMNxwf62FTAdpJMQfM",
-                "youtube_id": "PEGccV-NOm8",
-              }
-            }
-            key="1"
-            onClick={[Function]}
-            selected={false}
-          >
-            <div
-              className="DraftItem"
-              onClick={[Function]}
-            >
-              <div
-                style={
-                  Object {
-                    "flex": "none",
-                    "width": "13.5rem",
-                  }
-                }
-              >
-                Bodak Yellow
-              </div>
-              <div>
-                Cardi B
-              </div>
-            </div>
-          </DraftItem>
-        </div>
-      </div>
-    </div>
-    <div
-      className="Draft-col2"
-    />
-  </div>
-</Draft>
-`;
-
 exports[`updates selected track after clicking a selected item 1`] = `
 <Draft
   items={
@@ -290,12 +149,9 @@ exports[`updates selected track after clicking a selected item 1`] = `
             </span>
           </DraftItemCounter>
         </div>
-        <DraftNameInput
-          onChange={[Function]}
-        >
+        <DraftNameInput>
           <input
             className="DraftNameInput"
-            onChange={[Function]}
             type="text"
           />
         </DraftNameInput>
@@ -427,12 +283,9 @@ exports[`updates selected track after clicking an unselected item 1`] = `
             </span>
           </DraftItemCounter>
         </div>
-        <DraftNameInput
-          onChange={[Function]}
-        >
+        <DraftNameInput>
           <input
             className="DraftNameInput"
-            onChange={[Function]}
             type="text"
           />
         </DraftNameInput>

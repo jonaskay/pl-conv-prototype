@@ -10,17 +10,31 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {fileData: null};
+    this.state = {fileData: null, playlistName: ''};
+  }
+
+  handleFileSubmit = (e) => {
+    e.preventDefault();
+    this.setState({fileData: this.props.demoData, playlistName: this.props.demoName});
+  }
+  
+  handleNameChange = (e) => {
+    this.setState({playlistName: e.target.value});
   }
 
   render() {
     return (
       <div className="App">
         {!this.state.fileData && 
-          <Modal><FileForm fileName={this.props.fileName} /></Modal>
+          <Modal>
+            <FileForm fileName={this.props.demoName} onSubmit={this.handleFileSubmit} />
+          </Modal>
         }
         <div className="App-col1">
-          <Draft items={this.props.fileData} />
+          <Draft 
+            items={this.state.fileData} 
+            name={this.state.playlistName} 
+            onNameChange={this.handleNameChange} />
         </div>
         <div className="App-col2">
           <ConvertMenu />

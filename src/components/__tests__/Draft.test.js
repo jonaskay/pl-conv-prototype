@@ -16,12 +16,6 @@ it('renders an empty div when items are missing', () => {
   expect(component).toMatchSnapshot();
 });
 
-it('updates playlist name after name change', () => {
-  const component = mount(<Draft items={jsonData.slice(0, 1)} />)
-  component.find('input').simulate('change', { target: { value: 'Foobar' } });
-  expect(component).toMatchSnapshot();
-});
-
 it('updates selected track after clicking an unselected item', () => {
   const component = mount(<Draft items={jsonData.slice(0, 1)} />)
   component.find('.DraftItem').simulate('click');

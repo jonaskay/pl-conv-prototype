@@ -1,148 +1,547 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders file data after file form submit 1`] = `
+<App
+  demoData={
+    Array [
+      Object {
+        "artist": "Cardi B",
+        "id": 1,
+        "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+        "name": "Bodak Yellow",
+        "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+        "youtube_id": "PEGccV-NOm8",
+      },
+    ]
+  }
+  demoName="foobar"
+>
+  <div
+    className="App"
+  >
+    <div
+      className="App-col1"
+    >
+      <Draft
+        items={
+          Array [
+            Object {
+              "artist": "Cardi B",
+              "id": 1,
+              "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+              "name": "Bodak Yellow",
+              "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+              "youtube_id": "PEGccV-NOm8",
+            },
+          ]
+        }
+        name="foobar"
+        onNameChange={[Function]}
+      >
+        <div
+          className="Draft"
+        >
+          <div
+            className="Draft-col1"
+          >
+            <div
+              className="Draft-header"
+            >
+              <div
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,.5)",
+                  }
+                }
+              >
+                <span>
+                  foobar
+                </span>
+                 ▪ 
+                <DraftItemCounter
+                  items={
+                    Array [
+                      Object {
+                        "artist": "Cardi B",
+                        "id": 1,
+                        "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+                        "name": "Bodak Yellow",
+                        "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+                        "youtube_id": "PEGccV-NOm8",
+                      },
+                    ]
+                  }
+                >
+                  <span>
+                    1
+                     
+                    track
+                  </span>
+                </DraftItemCounter>
+              </div>
+              <DraftNameInput
+                name="foobar"
+                onChange={[Function]}
+              >
+                <input
+                  className="DraftNameInput"
+                  onChange={[Function]}
+                  type="text"
+                  value="foobar"
+                />
+              </DraftNameInput>
+            </div>
+            <div
+              className="Draft-table"
+            >
+              <div
+                className="Draft-table-header"
+              >
+                <div
+                  style={
+                    Object {
+                      "flex": "none",
+                      "width": "13.5rem",
+                    }
+                  }
+                >
+                  Name
+                </div>
+                <div
+                  style={
+                    Object {
+                      "flex": "auto",
+                    }
+                  }
+                >
+                  Artist
+                </div>
+              </div>
+              <div
+                className="Draft-table-body"
+              >
+                <DraftItem
+                  item={
+                    Object {
+                      "artist": "Cardi B",
+                      "id": 1,
+                      "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+                      "name": "Bodak Yellow",
+                      "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+                      "youtube_id": "PEGccV-NOm8",
+                    }
+                  }
+                  key="1"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  <div
+                    className="DraftItem"
+                    onClick={[Function]}
+                  >
+                    <div
+                      style={
+                        Object {
+                          "flex": "none",
+                          "width": "13.5rem",
+                        }
+                      }
+                    >
+                      Bodak Yellow
+                    </div>
+                    <div>
+                      Cardi B
+                    </div>
+                  </div>
+                </DraftItem>
+              </div>
+            </div>
+          </div>
+          <div
+            className="Draft-col2"
+          />
+        </div>
+      </Draft>
+    </div>
+    <div
+      className="App-col2"
+    >
+      <ConvertMenu>
+        <div
+          className="ConvertMenu"
+        >
+          <div
+            className="ConvertMenu-header"
+          >
+            Settings
+          </div>
+          <div
+            className="ConvertMenu-body"
+          >
+            <div
+              style={
+                Object {
+                  "color": "rgba(255,255,255,.7)",
+                }
+              }
+            >
+              Convert playlist to:
+            </div>
+            <ConvertMenuField
+              name="Spotify"
+            >
+              <div
+                className="ConvertMenuField"
+              >
+                <div>
+                  <input
+                    disabled={true}
+                    type="checkbox"
+                  />
+                  <label
+                    style={
+                      Object {
+                        "color": "rgba(255,255,255,.5)",
+                        "marginLeft": ".5rem",
+                      }
+                    }
+                  >
+                    Spotify
+                  </label>
+                </div>
+                <div>
+                  <button
+                    className="ConvertMenuField-button"
+                  >
+                    Connect with 
+                    Spotify
+                  </button>
+                </div>
+              </div>
+            </ConvertMenuField>
+            <ConvertMenuField
+              name="YouTube"
+            >
+              <div
+                className="ConvertMenuField"
+              >
+                <div>
+                  <input
+                    disabled={true}
+                    type="checkbox"
+                  />
+                  <label
+                    style={
+                      Object {
+                        "color": "rgba(255,255,255,.5)",
+                        "marginLeft": ".5rem",
+                      }
+                    }
+                  >
+                    YouTube
+                  </label>
+                </div>
+                <div>
+                  <button
+                    className="ConvertMenuField-button"
+                  >
+                    Connect with 
+                    YouTube
+                  </button>
+                </div>
+              </div>
+            </ConvertMenuField>
+          </div>
+        </div>
+      </ConvertMenu>
+      <ConvertButton>
+        <button
+          className="ConvertButton"
+        >
+          Convert Playlist
+        </button>
+      </ConvertButton>
+    </div>
+  </div>
+</App>
+`;
+
 exports[`renders the app 1`] = `
 <div
   className="App"
 >
-  <div
-    className="Modal"
-  >
-    <div
-      className="Modal-dialog"
-    >
-      <div
-        className="FileForm"
-      >
-        <div
-          style={
-            Object {
-              "fontSize": "1.25rem",
-              "marginBottom": "1rem",
-            }
-          }
-        >
-          New Playlist
-        </div>
-        <div
-          style={
-            Object {
-              "marginBottom": "1rem",
-            }
-          }
-        >
-          Choose a playlist file to start
-        </div>
-        <form
-          className="FileForm-form"
-        >
-          <input
-            className="FileForm-input"
-            disabled={true}
-            type="text"
-            value="foobar"
-          />
-          <input
-            className="FileForm-button"
-            type="submit"
-            value=">"
-          />
-        </form>
-      </div>
-    </div>
-  </div>
+  <Modal>
+    <FileForm
+      fileName="foobar"
+      onSubmit={[Function]}
+    />
+  </Modal>
   <div
     className="App-col1"
   >
-    <div
-      className="Draft"
+    <Draft
+      items={null}
+      name=""
+      onNameChange={[Function]}
     />
   </div>
   <div
     className="App-col2"
   >
-    <div
-      className="ConvertMenu"
-    >
-      <div
-        className="ConvertMenu-header"
-      >
-        Settings
-      </div>
-      <div
-        className="ConvertMenu-body"
-      >
-        <div
-          style={
-            Object {
-              "color": "rgba(255,255,255,.7)",
-            }
-          }
-        >
-          Convert playlist to:
-        </div>
-        <div
-          className="ConvertMenuField"
-        >
-          <div>
-            <input
-              disabled={true}
-              type="checkbox"
-            />
-            <label
-              style={
-                Object {
-                  "color": "rgba(255,255,255,.5)",
-                  "marginLeft": ".5rem",
-                }
-              }
-            >
-              Spotify
-            </label>
-          </div>
-          <div>
-            <button
-              className="ConvertMenuField-button"
-            >
-              Connect with 
-              Spotify
-            </button>
-          </div>
-        </div>
-        <div
-          className="ConvertMenuField"
-        >
-          <div>
-            <input
-              disabled={true}
-              type="checkbox"
-            />
-            <label
-              style={
-                Object {
-                  "color": "rgba(255,255,255,.5)",
-                  "marginLeft": ".5rem",
-                }
-              }
-            >
-              YouTube
-            </label>
-          </div>
-          <div>
-            <button
-              className="ConvertMenuField-button"
-            >
-              Connect with 
-              YouTube
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button
-      className="ConvertButton"
-    >
-      Convert Playlist
-    </button>
+    <ConvertMenu />
+    <ConvertButton />
   </div>
 </div>
+`;
+
+exports[`updates playlist name after name change 1`] = `
+<App>
+  <div
+    className="App"
+  >
+    <div
+      className="App-col1"
+    >
+      <Draft
+        items={
+          Array [
+            Object {
+              "artist": "Cardi B",
+              "id": 1,
+              "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+              "name": "Bodak Yellow",
+              "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+              "youtube_id": "PEGccV-NOm8",
+            },
+          ]
+        }
+        name="Baz"
+        onNameChange={[Function]}
+      >
+        <div
+          className="Draft"
+        >
+          <div
+            className="Draft-col1"
+          >
+            <div
+              className="Draft-header"
+            >
+              <div
+                style={
+                  Object {
+                    "color": "rgba(255,255,255,.5)",
+                  }
+                }
+              >
+                <span>
+                  Baz
+                </span>
+                 ▪ 
+                <DraftItemCounter
+                  items={
+                    Array [
+                      Object {
+                        "artist": "Cardi B",
+                        "id": 1,
+                        "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+                        "name": "Bodak Yellow",
+                        "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+                        "youtube_id": "PEGccV-NOm8",
+                      },
+                    ]
+                  }
+                >
+                  <span>
+                    1
+                     
+                    track
+                  </span>
+                </DraftItemCounter>
+              </div>
+              <DraftNameInput
+                name="Baz"
+                onChange={[Function]}
+              >
+                <input
+                  className="DraftNameInput"
+                  onChange={[Function]}
+                  type="text"
+                  value="Baz"
+                />
+              </DraftNameInput>
+            </div>
+            <div
+              className="Draft-table"
+            >
+              <div
+                className="Draft-table-header"
+              >
+                <div
+                  style={
+                    Object {
+                      "flex": "none",
+                      "width": "13.5rem",
+                    }
+                  }
+                >
+                  Name
+                </div>
+                <div
+                  style={
+                    Object {
+                      "flex": "auto",
+                    }
+                  }
+                >
+                  Artist
+                </div>
+              </div>
+              <div
+                className="Draft-table-body"
+              >
+                <DraftItem
+                  item={
+                    Object {
+                      "artist": "Cardi B",
+                      "id": 1,
+                      "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+                      "name": "Bodak Yellow",
+                      "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+                      "youtube_id": "PEGccV-NOm8",
+                    }
+                  }
+                  key="1"
+                  onClick={[Function]}
+                  selected={false}
+                >
+                  <div
+                    className="DraftItem"
+                    onClick={[Function]}
+                  >
+                    <div
+                      style={
+                        Object {
+                          "flex": "none",
+                          "width": "13.5rem",
+                        }
+                      }
+                    >
+                      Bodak Yellow
+                    </div>
+                    <div>
+                      Cardi B
+                    </div>
+                  </div>
+                </DraftItem>
+              </div>
+            </div>
+          </div>
+          <div
+            className="Draft-col2"
+          />
+        </div>
+      </Draft>
+    </div>
+    <div
+      className="App-col2"
+    >
+      <ConvertMenu>
+        <div
+          className="ConvertMenu"
+        >
+          <div
+            className="ConvertMenu-header"
+          >
+            Settings
+          </div>
+          <div
+            className="ConvertMenu-body"
+          >
+            <div
+              style={
+                Object {
+                  "color": "rgba(255,255,255,.7)",
+                }
+              }
+            >
+              Convert playlist to:
+            </div>
+            <ConvertMenuField
+              name="Spotify"
+            >
+              <div
+                className="ConvertMenuField"
+              >
+                <div>
+                  <input
+                    disabled={true}
+                    type="checkbox"
+                  />
+                  <label
+                    style={
+                      Object {
+                        "color": "rgba(255,255,255,.5)",
+                        "marginLeft": ".5rem",
+                      }
+                    }
+                  >
+                    Spotify
+                  </label>
+                </div>
+                <div>
+                  <button
+                    className="ConvertMenuField-button"
+                  >
+                    Connect with 
+                    Spotify
+                  </button>
+                </div>
+              </div>
+            </ConvertMenuField>
+            <ConvertMenuField
+              name="YouTube"
+            >
+              <div
+                className="ConvertMenuField"
+              >
+                <div>
+                  <input
+                    disabled={true}
+                    type="checkbox"
+                  />
+                  <label
+                    style={
+                      Object {
+                        "color": "rgba(255,255,255,.5)",
+                        "marginLeft": ".5rem",
+                      }
+                    }
+                  >
+                    YouTube
+                  </label>
+                </div>
+                <div>
+                  <button
+                    className="ConvertMenuField-button"
+                  >
+                    Connect with 
+                    YouTube
+                  </button>
+                </div>
+              </div>
+            </ConvertMenuField>
+          </div>
+        </div>
+      </ConvertMenu>
+      <ConvertButton>
+        <button
+          className="ConvertButton"
+        >
+          Convert Playlist
+        </button>
+      </ConvertButton>
+    </div>
+  </div>
+</App>
 `;

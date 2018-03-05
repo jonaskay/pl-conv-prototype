@@ -7,7 +7,7 @@ class FileForm extends React.Component {
       <div className="FileForm">
         <div style={{fontSize: '1.25rem', marginBottom: '1rem'}}>New Playlist</div>
         <div style={{marginBottom: '1rem'}}>Choose a playlist file to start</div>
-        <form className="FileForm-form">
+        <form className="FileForm-form" onSubmit={this.props.onSubmit}>
           <input
             type="text"
             value={this.props.fileName}
