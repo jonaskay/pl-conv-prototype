@@ -1,0 +1,161 @@
+[
+  { 
+    "id": 1,
+    "name": "Bodak Yellow", 
+    "artist": "Cardi B",
+    "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+    "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+    "youtube_id": "PEGccV-NOm8"
+  },
+  { 
+    "id": 2,
+    "name": "DNA.", 
+    "artist": "Kendrick Lamar",
+    "image": "https://i.scdn.co/image/4e76f9ea1d80c1ed7bbc4e8fe625cf38d66f60cb",
+    "spotify_id": "4cGeMgLcykDLAazHFpbZbU",
+    "youtube_id": "NLZRYQMLDW4"
+  },
+  { 
+    "id": 3,
+    "name": "Green Light", 
+    "artist": "Lorde",
+    "image": "https://i.scdn.co/image/05166e46ac5b35cb06ff6ac00edd26aa7c933bf3",
+    "spotify_id": "3FQ26GroLnhQEja48FKYqT",
+    "youtube_id": "dMK_npDG12Q"
+  },    
+  { 
+    "id": 4,
+    "name": "Love Galore", 
+    "artist": "SZA",
+    "image": "https://i.scdn.co/image/858107cdf591e0257617a751f331f7bc1debcfca",
+    "spotify_id": "0q75NwOoFiARAVp4EXU4Bs",
+    "youtube_id": "hHXfCOjb3fk"
+  },
+  { 
+    "id": 5,
+    "name": "XO TOUR Llif3", 
+    "artist": "Lil Uzi Vert",
+    "image": "https://i.scdn.co/image/0a81b392d7fb635189c44efae5a9409a03ca4e48",
+    "spotify_id": "2eMwDehkIC1j68U6FA3Eiq",
+    "youtube_id": "WrsFXgQk5UI"
+  },
+  { 
+    "id": 6,
+    "name": "Chanel", 
+    "artist": "Frank Ocean",
+    "image": "https://i.scdn.co/image/e7207c902d7faed8eabb269cfa323a8c75338f40",
+    "spotify_id": "6Nle9hKrkL1wQpwNfEkxjh",
+    "youtube_id": "XnbsIl2BnWw"
+  },  
+  { 
+    "id": 7,
+    "name": "Dum Surfer", 
+    "artist": "King Krule",
+    "image": "https://i.scdn.co/image/56d7d0aa70465ad1a14409ad13d0772c9d8e58cc",
+    "spotify_id": "2TMo5VM652clhr0KQ29dbj",
+    "youtube_id": "K5-f1Bnltu8"
+  },  
+  { 
+    "id": 8,
+    "name": "Mask Off", 
+    "artist": "Future",
+    "image": "https://i.scdn.co/image/6b311ec6e3d6999a14e7d1ea8841d00226c292c6",
+    "spotify_id": "0VgkVdmE4gld66l8iyGjgx",
+    "youtube_id": "xvZqHgFz51I"
+  },
+  { 
+    "id": 9,
+    "name": "Frontline", 
+    "artist": "Kelela",
+    "image": "https://i.scdn.co/image/124aefdc96c9fa9b40280bd7330f118b461782fa",
+    "spotify_id": "6b3KUNSmJL1qIfi1hF1G6Y"
+  },
+  { 
+    "id": 10,
+    "name": "Boys", 
+    "artist": "Charlie XCX",
+    "image": "https://i.scdn.co/image/c934fefc5929eb96e24a09058e331275066f8e0e",
+    "spotify_id": "5o4yGlG0PfeVUa6ClIyOxq",
+    "youtube_id": "mPRy1B4t5YA"
+  },
+  {
+    "id": 11,
+    "name": "HUMBLE.", 
+    "artist": "Kendrick Lamar",
+    "image": "https://i.scdn.co/image/4e76f9ea1d80c1ed7bbc4e8fe625cf38d66f60cb",
+    "spotify_id": "7ujx3NYtwO2LkmKGz59mXp",
+    "youtube_id": "tvTRZJ-4EyI"    
+  },
+  {
+    "id": 12,
+    "name": "Passionfruit", 
+    "artist": "Drake",
+    "image": "https://i.scdn.co/image/8f5f72b3aadb8829d740137fd4a217853cdf82b7",
+    "spotify_id": "7hDc8b7IXETo14hHIHdnhd",
+    "youtube_id": "gM_jeKIuJDo"    
+  },
+  {
+    "id": 13,
+    "name": "The Story of O.J.", 
+    "artist": "JAY-Z",
+    "image": "",
+    "spotify_id": "",
+    "youtube_id": "RM7lw0Ovzq0"    
+  },
+  {
+    "id": 14,
+    "name": "Real Death", 
+    "artist": "Mount Eerie",
+    "image": "https://i.scdn.co/image/5b03442f45d7a081c0d09861d7e5eb95d09177f1",
+    "spotify_id": "4RLr8yJXuhJ6ZrIQkZ4JlA",
+    "youtube_id": "zGESP0iePmQ"    
+  },
+  {
+    "id": 15,
+    "name": "The Gate", 
+    "artist": "Björk",
+    "image": "https://i.scdn.co/image/e71a1dd4b609daf8c2edeaf7e2cf10efd578519e",
+    "spotify_id": "5px6GXchaOpIB8ImYJvbmI",
+    "youtube_id": "RIGgn1s3AvI"    
+  },
+  {
+    "id": 16,
+    "name": "Magnolia", 
+    "artist": "Playboi Carti",
+    "image": "https://i.scdn.co/image/4d410b4ebcf40f786f345466d0fc8a19ff49857a",
+    "spotify_id": "4gUQE7JiIwnQKde4RtKytB",
+    "youtube_id": "oCveByMXd_0"    
+  },
+  {
+    "id": 17,
+    "name": "Thinking of a Place", 
+    "artist": "The War on Drugs",
+    "image": "https://i.scdn.co/image/0368dea81db86043e75b62604b9e9b274af287f9",
+    "spotify_id": "4Sd5tbNP4q8wS64abqwfkN",
+    "youtube_id": "TeaDE1magRk"    
+  },
+  {
+    "id": 18,
+    "name": "Baby Luv", 
+    "artist": "Nilüfer Yanya",
+    "image": "https://i.scdn.co/image/9da3794dfce28a2b913b90291a8f7b0530927e18",
+    "spotify_id": "6RAtS5sZlizdGGcawa4sJU",
+    "youtube_id": "lmmQuNl_8xc"    
+  },
+  {
+    "id": 19,
+    "name": "IDK About You", 
+    "artist": "Fever Ray",
+    "image": "https://i.scdn.co/image/f58f289234efd2044df6314c3ee1281ccc2330c4",
+    "spotify_id": "2JJ94rpKNgLbZTD9Y3qKBM",
+    "youtube_id": "zOYhiWjrZeA"    
+  },
+  {
+    "id": 20,
+    "name": "Slide", 
+    "artist": "Calvin Harris",
+    "image": "https://i.scdn.co/image/61ff3036c3b9ed2ca3c39312928611dfe0ad85e8",
+    "spotify_id": "6gpcs5eMhJwax4mIfKDYQk",
+    "youtube_id": "8Ee4QjCEHHc"    
+  }
+]

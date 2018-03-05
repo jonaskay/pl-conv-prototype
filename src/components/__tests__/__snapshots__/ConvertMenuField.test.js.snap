@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a field 1`] = `
+<div
+  className="ConvertMenuField"
+>
+  <div>
+    <input
+      disabled={true}
+      type="checkbox"
+    />
+    <label
+      style={
+        Object {
+          "color": "rgba(255,255,255,.5)",
+          "marginLeft": ".5rem",
+        }
+      }
+    >
+      Foobar
+    </label>
+  </div>
+  <div>
+    <button
+      className="ConvertMenuField-button"
+    >
+      Connect with 
+      Foobar
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders an input field 1`] = `
+<input
+  className="DraftNameInput"
+  type="text"
+  value="Foobar"
+/>
+`;

@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a menu 1`] = `
+<div
+  className="ConvertMenu"
+>
+  <div
+    className="ConvertMenu-header"
+  >
+    Settings
+  </div>
+  <div
+    className="ConvertMenu-body"
+  >
+    <div
+      style={
+        Object {
+          "color": "rgba(255,255,255,.7)",
+        }
+      }
+    >
+      Convert playlist to:
+    </div>
+    <div
+      className="ConvertMenuField"
+    >
+      <div>
+        <input
+          disabled={true}
+          type="checkbox"
+        />
+        <label
+          style={
+            Object {
+              "color": "rgba(255,255,255,.5)",
+              "marginLeft": ".5rem",
+            }
+          }
+        >
+          Spotify
+        </label>
+      </div>
+      <div>
+        <button
+          className="ConvertMenuField-button"
+        >
+          Connect with 
+          Spotify
+        </button>
+      </div>
+    </div>
+    <div
+      className="ConvertMenuField"
+    >
+      <div>
+        <input
+          disabled={true}
+          type="checkbox"
+        />
+        <label
+          style={
+            Object {
+              "color": "rgba(255,255,255,.5)",
+              "marginLeft": ".5rem",
+            }
+          }
+        >
+          YouTube
+        </label>
+      </div>
+      <div>
+        <button
+          className="ConvertMenuField-button"
+        >
+          Connect with 
+          YouTube
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

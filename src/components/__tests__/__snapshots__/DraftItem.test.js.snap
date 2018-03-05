@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a draft item 1`] = `
+<div
+  className="DraftItem"
+>
+  <div
+    style={
+      Object {
+        "flex": "none",
+        "width": "13.5rem",
+      }
+    }
+  >
+    Bodak Yellow
+  </div>
+  <div>
+    Cardi B
+  </div>
+</div>
+`;
+
+exports[`renders a selected draft item 1`] = `
+<div
+  className="DraftItem DraftItem-selected"
+>
+  <div
+    style={
+      Object {
+        "flex": "none",
+        "width": "13.5rem",
+      }
+    }
+  >
+    Bodak Yellow
+  </div>
+  <div>
+    Cardi B
+  </div>
+</div>
+`;

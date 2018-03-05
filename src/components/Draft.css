@@ -1,0 +1,60 @@
+.Draft {
+  background: #303030; 
+  box-shadow:
+    0 1px 5px 0 rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.Draft-col1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+}
+
+.Draft-col2 {
+  border-left: 1px solid rgba(255,255,255,.12);
+  height: 100%;
+  overflow-y: auto;
+  width: 40%;
+}
+
+.Draft-header {
+  flex: none;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.Draft-table {
+  border-collapse: collapse;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.Draft-table-header {
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  display: flex;
+  flex: none;
+}
+
+.Draft-table-header > div {
+  box-sizing: border-box;
+  color: rgba(255,255,255,.5);
+  font-size: .875rem;
+  font-weight: 300;
+  letter-spacing: .05em;
+  padding: .75rem 1.5rem;
+  padding-right: 0;
+  text-transform: uppercase;
+}
+
+.Draft-table-body {
+  flex: auto;
+  overflow-y: auto;
+}

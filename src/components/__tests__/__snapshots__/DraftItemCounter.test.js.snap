@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders item count for 0 items 1`] = `
+<span>
+  0
+   
+  tracks
+</span>
+`;
+
+exports[`renders item count for 1 item 1`] = `
+<span>
+  1
+   
+  track
+</span>
+`;
+
+exports[`renders item count for multiple items 1`] = `
+<span>
+  2
+   
+  tracks
+</span>
+`;

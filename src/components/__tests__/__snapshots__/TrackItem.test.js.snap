@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a Spotify player 1`] = `
+<div
+  style={
+    Object {
+      "marginBottom": "1rem",
+    }
+  }
+>
+  <iframe
+    frameborder="0"
+    height="80"
+    src="https://open.spotify.com/embed?uri=spotify:track:undefined"
+    title="Spotify Play Button"
+    width="288"
+  />
+</div>
+`;
+
+exports[`renders a YouTube player 1`] = `
+<div
+  style={
+    Object {
+      "marginBottom": "1rem",
+    }
+  }
+>
+  <iframe
+    allow="autoplay; encrypted-media"
+    allowFullScreen={true}
+    frameborder="0"
+    height="162"
+    src="https://www.youtube.com/embed/undefined?controls=0&amp;showinfo=0"
+    title="YouTube Player"
+    width="288"
+  />
+</div>
+`;
