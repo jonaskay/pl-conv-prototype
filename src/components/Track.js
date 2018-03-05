@@ -13,10 +13,14 @@ class Track extends React.Component {
           style={{backgroundImage: 'url(' + track.image + ')'}}></div>
         <div className="Track-content">
           <div style={{marginBottom: '1.25rem'}}>
-            <img
-              src={track.image} 
-              alt={[track.name, track.artist].join(' - ')} 
-              className="Track-img" />
+            {track.image ? (
+              <img
+                src={track.image} 
+                alt={[track.name, track.artist].join(' - ')} 
+                className="Track-img" />
+            ) : (
+              <div className="Track-img" style={{background: '#101010'}}></div>
+            )}
             <div style={{fontSize: '1.125rem', marginBottom: '.25rem'}}>{track.name}</div>
             <div>{track.artist}</div>
           </div>

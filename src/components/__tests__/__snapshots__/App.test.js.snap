@@ -70,7 +70,8 @@ exports[`renders the app 1`] = `
             className="Draft-table-body"
           >
             <div
-              className="DraftItem DraftItem-selected"
+              className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -88,6 +89,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -105,6 +107,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -122,6 +125,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -139,6 +143,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -156,6 +161,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -173,6 +179,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -190,6 +197,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -207,6 +215,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -224,6 +233,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -241,6 +251,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -258,6 +269,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -275,6 +287,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -292,6 +305,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -309,6 +323,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -326,6 +341,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -343,6 +359,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -360,6 +377,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -377,6 +395,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -394,6 +413,7 @@ exports[`renders the app 1`] = `
             </div>
             <div
               className="DraftItem"
+              onClick={[Function]}
             >
               <div
                 style={
@@ -414,82 +434,7 @@ exports[`renders the app 1`] = `
       </div>
       <div
         className="Draft-col2"
-      >
-        <div
-          className="Track"
-        >
-          <div
-            className="Track-backdrop"
-            style={
-              Object {
-                "backgroundImage": "url(https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc)",
-              }
-            }
-          />
-          <div
-            className="Track-content"
-          >
-            <div
-              style={
-                Object {
-                  "marginBottom": "1.25rem",
-                }
-              }
-            >
-              <img
-                alt="Bodak Yellow - Cardi B"
-                className="Track-img"
-                src="https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc"
-              />
-              <div
-                style={
-                  Object {
-                    "fontSize": "1.125rem",
-                    "marginBottom": ".25rem",
-                  }
-                }
-              >
-                Bodak Yellow
-              </div>
-              <div>
-                Cardi B
-              </div>
-            </div>
-            <div
-              style={
-                Object {
-                  "marginBottom": "1rem",
-                }
-              }
-            >
-              <iframe
-                frameBorder="0"
-                height="80"
-                src="https://open.spotify.com/embed?uri=spotify:track:2771LMNxwf62FTAdpJMQfM"
-                title="Spotify Play Button"
-                width="288"
-              />
-            </div>
-            <div
-              style={
-                Object {
-                  "marginBottom": "1rem",
-                }
-              }
-            >
-              <iframe
-                allow="autoplay; encrypted-media"
-                allowFullScreen={true}
-                frameBorder="0"
-                height="162"
-                src="https://www.youtube.com/embed/PEGccV-NOm8?controls=0&amp;showinfo=0"
-                title="YouTube Player"
-                width="288"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      />
     </div>
   </div>
   <div

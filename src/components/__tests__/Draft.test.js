@@ -16,3 +16,17 @@ it('updates playlist name after name change', () => {
   component.find('input').simulate('change', { target: { value: 'Foobar' } });
   expect(component).toMatchSnapshot();
 });
+
+it('updates selected track after clicking an unselected item', () => {
+  const component = mount(<Draft items={jsonData.slice(0, 1)} />)
+  component.find('.DraftItem').simulate('click');
+  expect(component).toMatchSnapshot();
+});
+
+it('updates selected track after clicking a selected item', () => {
+  const component = mount(<Draft items={jsonData.slice(0, 1)} />)
+  component.setState({selectedTrack: jsonData[0]});
+  component.find('.DraftItem').simulate('click');
+  
+  expect(component).toMatchSnapshot();
+});

@@ -1,22 +1,25 @@
 import React from 'react';
-import ReactTestRenderer from 'react-test-renderer';
+import Enzyme, { shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import jsonData from '../../tracks.json';
 import DraftItem from '../DraftItem';
 
-const item = { 
-  "id": 1,
-  "name": "Bodak Yellow", 
-  "artist": "Cardi B",
-  "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
-  "spotify_id": "2771LMNxwf62FTAdpJMQfM",
-  "youtube_id": "PEGccV-NOm8"
-}
+Enzyme.configure({ adapter: new Adapter() });
 
 it('renders a draft item', () => {
-  const component = ReactTestRenderer.create(<DraftItem item={item} />);
+  const component = shallow(<DraftItem item={jsonData[0]} />);
   expect(component).toMatchSnapshot();
 });
 
 it('renders a selected draft item', () => {
-  const component = ReactTestRenderer.create(<DraftItem item={item} selected={true} />);
+  const component = shallow(<DraftItem item={jsonData[0]} selected={true} />);
   expect(component).toMatchSnapshot();
 });
+
+it('handles a click', () => {
+  const mockFunc = jest.fn();
+  const component = shallow(<DraftItem item={jsonData[0]} onClick={mockFunc} />)
+  component.find('.DraftItem').simulate('click');
+
+  expect(mockFunc).toBeCalled();
+})

@@ -2,6 +2,10 @@ import React from 'react';
 
 class TrackItem extends React.Component {
   render() {
+    if (!this.props.resource_id) {
+      return null;
+    }
+
     const iframe = (() => {
       switch (this.props.service) {
         case 'spotify':
@@ -22,7 +26,7 @@ class TrackItem extends React.Component {
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
-              title="YouTube Player"></iframe>
+               title="YouTube Player"></iframe>
           );
         default: return <div></div>;
       }

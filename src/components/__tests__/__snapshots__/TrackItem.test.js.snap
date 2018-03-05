@@ -11,7 +11,7 @@ exports[`renders a Spotify player 1`] = `
   <iframe
     frameBorder="0"
     height="80"
-    src="https://open.spotify.com/embed?uri=spotify:track:undefined"
+    src="https://open.spotify.com/embed?uri=spotify:track:foobar"
     title="Spotify Play Button"
     width="288"
   />
@@ -31,9 +31,11 @@ exports[`renders a YouTube player 1`] = `
     allowFullScreen={true}
     frameBorder="0"
     height="162"
-    src="https://www.youtube.com/embed/undefined?controls=0&amp;showinfo=0"
+    src="https://www.youtube.com/embed/foobar?controls=0&amp;showinfo=0"
     title="YouTube Player"
     width="288"
   />
 </div>
 `;
+
+exports[`renders nothing when resource id is missing 1`] = `null`;

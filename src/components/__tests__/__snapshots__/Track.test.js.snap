@@ -76,3 +76,83 @@ exports[`renders a track 1`] = `
   </div>
 </div>
 `;
+
+exports[`renders a track without image 1`] = `
+<div
+  className="Track"
+>
+  <div
+    className="Track-backdrop"
+    style={
+      Object {
+        "backgroundImage": "url(undefined)",
+      }
+    }
+  />
+  <div
+    className="Track-content"
+  >
+    <div
+      style={
+        Object {
+          "marginBottom": "1.25rem",
+        }
+      }
+    >
+      <div
+        className="Track-img"
+        style={
+          Object {
+            "background": "#101010",
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "fontSize": "1.125rem",
+            "marginBottom": ".25rem",
+          }
+        }
+      >
+        Bodak Yellow
+      </div>
+      <div>
+        Cardi B
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1rem",
+        }
+      }
+    >
+      <iframe
+        frameBorder="0"
+        height="80"
+        src="https://open.spotify.com/embed?uri=spotify:track:2771LMNxwf62FTAdpJMQfM"
+        title="Spotify Play Button"
+        width="288"
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "marginBottom": "1rem",
+        }
+      }
+    >
+      <iframe
+        allow="autoplay; encrypted-media"
+        allowFullScreen={true}
+        frameBorder="0"
+        height="162"
+        src="https://www.youtube.com/embed/PEGccV-NOm8?controls=0&amp;showinfo=0"
+        title="YouTube Player"
+        width="288"
+      />
+    </div>
+  </div>
+</div>
+`;

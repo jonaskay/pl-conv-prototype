@@ -14,3 +14,15 @@ it('renders a track', () => {
   const component = ReactTestRenderer.create(<Track track={track} />);
   expect(component).toMatchSnapshot();
 });
+
+it('renders a track without image', () => {
+  const track = { 
+    "id": 1,
+    "name": "Bodak Yellow", 
+    "artist": "Cardi B",
+    "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+    "youtube_id": "PEGccV-NOm8"
+  }
+  const component = ReactTestRenderer.create(<Track track={track} />);
+  expect(component).toMatchSnapshot();
+});

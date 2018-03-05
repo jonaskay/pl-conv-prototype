@@ -9,11 +9,19 @@ class Draft extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {name: ''};
+    this.state = {name: '', selectedTrack: null};
   }
 
   handleNameChange = (e) => {
     this.setState({name: e.target.value});
+  }
+
+  handleItemClick = (value) => {
+    let track = this.props.items.find(item => item.id === value.id);
+
+    const selectedTrack = track === this.state.selectedTrack ? null : track;
+
+    this.setState({selectedTrack: selectedTrack});
   }
 
   render() {
@@ -34,14 +42,18 @@ class Draft extends React.Component {
               <div style={{flex: 'auto'}}>Artist</div>
             </div>
             <div className="Draft-table-body">
-              {this.props.items.map(
-                  (item, i) => <DraftItem key={item.id} item={item} selected={i === 0} />
-              )}
+              {this.props.items.map((item, i) => (
+                <DraftItem 
+                  key={item.id} 
+                  item={item} 
+                  selected={item === this.state.selectedTrack}
+                  onClick={this.handleItemClick} />
+              ))}
             </div>
           </div>
         </div>
         <div className="Draft-col2">
-          <Track track={this.props.items[0]} />
+          {this.state.selectedTrack && <Track track={this.state.selectedTrack} />}
         </div>
       </div>
     );
