@@ -3,6 +3,7 @@
 exports[`renders an input field 1`] = `
 <input
   className="DraftNameInput"
+  onChange={undefined}
   type="text"
   value="Foobar"
 />

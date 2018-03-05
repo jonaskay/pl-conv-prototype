@@ -23,8 +23,10 @@ exports[`renders the app 1`] = `
               }
             }
           >
-            foobar
-             ▪ 
+            <span>
+              
+            </span>
+             ▪ 
             <span>
               20
                
@@ -33,15 +35,16 @@ exports[`renders the app 1`] = `
           </div>
           <input
             className="DraftNameInput"
+            onChange={[Function]}
             type="text"
-            value="foobar"
+            value={undefined}
           />
         </div>
         <div
-          class="Draft-table"
+          className="Draft-table"
         >
           <div
-            class="Draft-table-header"
+            className="Draft-table-header"
           >
             <div
               style={
@@ -64,7 +67,7 @@ exports[`renders the app 1`] = `
             </div>
           </div>
           <div
-            class="Draft-table-body"
+            className="Draft-table-body"
           >
             <div
               className="DraftItem DraftItem-selected"
@@ -460,7 +463,7 @@ exports[`renders the app 1`] = `
               }
             >
               <iframe
-                frameborder="0"
+                frameBorder="0"
                 height="80"
                 src="https://open.spotify.com/embed?uri=spotify:track:2771LMNxwf62FTAdpJMQfM"
                 title="Spotify Play Button"
@@ -477,7 +480,7 @@ exports[`renders the app 1`] = `
               <iframe
                 allow="autoplay; encrypted-media"
                 allowFullScreen={true}
-                frameborder="0"
+                frameBorder="0"
                 height="162"
                 src="https://www.youtube.com/embed/PEGccV-NOm8?controls=0&amp;showinfo=0"
                 title="YouTube Player"

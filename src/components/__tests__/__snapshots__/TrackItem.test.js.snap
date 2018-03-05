@@ -9,7 +9,7 @@ exports[`renders a Spotify player 1`] = `
   }
 >
   <iframe
-    frameborder="0"
+    frameBorder="0"
     height="80"
     src="https://open.spotify.com/embed?uri=spotify:track:undefined"
     title="Spotify Play Button"
@@ -29,7 +29,7 @@ exports[`renders a YouTube player 1`] = `
   <iframe
     allow="autoplay; encrypted-media"
     allowFullScreen={true}
-    frameborder="0"
+    frameBorder="0"
     height="162"
     src="https://www.youtube.com/embed/undefined?controls=0&amp;showinfo=0"
     title="YouTube Player"

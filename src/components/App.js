@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-col1">
-          <Draft name={this.props.fileName} items={this.props.fileData} />
+          <Draft items={this.props.fileData} />
         </div>
         <div className="App-col2">
           <ConvertMenu />

@@ -10,7 +10,7 @@ class TrackItem extends React.Component {
               src={'https://open.spotify.com/embed?uri=spotify:track:' + this.props.resource_id}
               width="288"
               height="80"
-              frameborder="0"
+              frameBorder="0"
               title="Spotify Play Button"></iframe>
           );
         case 'youtube':
@@ -19,7 +19,7 @@ class TrackItem extends React.Component {
               src={'https://www.youtube.com/embed/' + this.props.resource_id + '?controls=0&amp;showinfo=0'}
               width="288"
               height="162"
-              frameborder="0"
+              frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
               title="YouTube Player"></iframe>

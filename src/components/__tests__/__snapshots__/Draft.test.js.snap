@@ -17,24 +17,32 @@ exports[`renders a playlist draft 1`] = `
           }
         }
       >
-         ▪ 
-        <span>
-          1
-           
-          track
-        </span>
+        <span />
+         ▪ 
+        <DraftItemCounter
+          items={
+            Array [
+              Object {
+                "artist": "Cardi B",
+                "id": 1,
+                "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+                "name": "Bodak Yellow",
+                "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+                "youtube_id": "PEGccV-NOm8",
+              },
+            ]
+          }
+        />
       </div>
-      <input
-        className="DraftNameInput"
-        type="text"
-        value={undefined}
+      <DraftNameInput
+        onChange={[Function]}
       />
     </div>
     <div
-      class="Draft-table"
+      className="Draft-table"
     >
       <div
-        class="Draft-table-header"
+        className="Draft-table-header"
       >
         <div
           style={
@@ -57,10 +65,115 @@ exports[`renders a playlist draft 1`] = `
         </div>
       </div>
       <div
-        class="Draft-table-body"
+        className="Draft-table-body"
+      >
+        <DraftItem
+          item={
+            Object {
+              "artist": "Cardi B",
+              "id": 1,
+              "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+              "name": "Bodak Yellow",
+              "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+              "youtube_id": "PEGccV-NOm8",
+            }
+          }
+          key="1"
+          selected={true}
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="Draft-col2"
+  >
+    <Track
+      track={
+        Object {
+          "artist": "Cardi B",
+          "id": 1,
+          "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+          "name": "Bodak Yellow",
+          "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+          "youtube_id": "PEGccV-NOm8",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`updates playlist name after name change 1`] = `
+<Draft
+  items={
+    Array [
+      Object {
+        "artist": "Cardi B",
+        "id": 1,
+        "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+        "name": "Bodak Yellow",
+        "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+        "youtube_id": "PEGccV-NOm8",
+      },
+    ]
+  }
+>
+  <div
+    className="Draft"
+  >
+    <div
+      className="Draft-col1"
+    >
+      <div
+        className="Draft-header"
       >
         <div
-          className="DraftItem DraftItem-selected"
+          style={
+            Object {
+              "color": "rgba(255,255,255,.5)",
+            }
+          }
+        >
+          <span>
+            Foobar
+          </span>
+           ▪ 
+          <DraftItemCounter
+            items={
+              Array [
+                Object {
+                  "artist": "Cardi B",
+                  "id": 1,
+                  "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+                  "name": "Bodak Yellow",
+                  "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+                  "youtube_id": "PEGccV-NOm8",
+                },
+              ]
+            }
+          >
+            <span>
+              1
+               
+              track
+            </span>
+          </DraftItemCounter>
+        </div>
+        <DraftNameInput
+          onChange={[Function]}
+        >
+          <input
+            className="DraftNameInput"
+            onChange={[Function]}
+            type="text"
+          />
+        </DraftNameInput>
+      </div>
+      <div
+        className="Draft-table"
+      >
+        <div
+          className="Draft-table-header"
         >
           <div
             style={
@@ -70,92 +183,157 @@ exports[`renders a playlist draft 1`] = `
               }
             }
           >
-            Bodak Yellow
+            Name
           </div>
-          <div>
-            Cardi B
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="Draft-col2"
-  >
-    <div
-      className="Track"
-    >
-      <div
-        className="Track-backdrop"
-        style={
-          Object {
-            "backgroundImage": "url(https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc)",
-          }
-        }
-      />
-      <div
-        className="Track-content"
-      >
-        <div
-          style={
-            Object {
-              "marginBottom": "1.25rem",
-            }
-          }
-        >
-          <img
-            alt="Bodak Yellow - Cardi B"
-            className="Track-img"
-            src="https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc"
-          />
           <div
             style={
               Object {
-                "fontSize": "1.125rem",
-                "marginBottom": ".25rem",
+                "flex": "auto",
               }
             }
           >
-            Bodak Yellow
-          </div>
-          <div>
-            Cardi B
+            Artist
           </div>
         </div>
         <div
-          style={
-            Object {
-              "marginBottom": "1rem",
-            }
-          }
+          className="Draft-table-body"
         >
-          <iframe
-            frameborder="0"
-            height="80"
-            src="https://open.spotify.com/embed?uri=spotify:track:2771LMNxwf62FTAdpJMQfM"
-            title="Spotify Play Button"
-            width="288"
-          />
-        </div>
-        <div
-          style={
-            Object {
-              "marginBottom": "1rem",
+          <DraftItem
+            item={
+              Object {
+                "artist": "Cardi B",
+                "id": 1,
+                "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+                "name": "Bodak Yellow",
+                "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+                "youtube_id": "PEGccV-NOm8",
+              }
             }
-          }
-        >
-          <iframe
-            allow="autoplay; encrypted-media"
-            allowFullScreen={true}
-            frameborder="0"
-            height="162"
-            src="https://www.youtube.com/embed/PEGccV-NOm8?controls=0&amp;showinfo=0"
-            title="YouTube Player"
-            width="288"
-          />
+            key="1"
+            selected={true}
+          >
+            <div
+              className="DraftItem DraftItem-selected"
+            >
+              <div
+                style={
+                  Object {
+                    "flex": "none",
+                    "width": "13.5rem",
+                  }
+                }
+              >
+                Bodak Yellow
+              </div>
+              <div>
+                Cardi B
+              </div>
+            </div>
+          </DraftItem>
         </div>
       </div>
     </div>
+    <div
+      className="Draft-col2"
+    >
+      <Track
+        track={
+          Object {
+            "artist": "Cardi B",
+            "id": 1,
+            "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
+            "name": "Bodak Yellow",
+            "spotify_id": "2771LMNxwf62FTAdpJMQfM",
+            "youtube_id": "PEGccV-NOm8",
+          }
+        }
+      >
+        <div
+          className="Track"
+        >
+          <div
+            className="Track-backdrop"
+            style={
+              Object {
+                "backgroundImage": "url(https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc)",
+              }
+            }
+          />
+          <div
+            className="Track-content"
+          >
+            <div
+              style={
+                Object {
+                  "marginBottom": "1.25rem",
+                }
+              }
+            >
+              <img
+                alt="Bodak Yellow - Cardi B"
+                className="Track-img"
+                src="https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc"
+              />
+              <div
+                style={
+                  Object {
+                    "fontSize": "1.125rem",
+                    "marginBottom": ".25rem",
+                  }
+                }
+              >
+                Bodak Yellow
+              </div>
+              <div>
+                Cardi B
+              </div>
+            </div>
+            <TrackItem
+              resource_id="2771LMNxwf62FTAdpJMQfM"
+              service="spotify"
+            >
+              <div
+                style={
+                  Object {
+                    "marginBottom": "1rem",
+                  }
+                }
+              >
+                <iframe
+                  frameBorder="0"
+                  height="80"
+                  src="https://open.spotify.com/embed?uri=spotify:track:2771LMNxwf62FTAdpJMQfM"
+                  title="Spotify Play Button"
+                  width="288"
+                />
+              </div>
+            </TrackItem>
+            <TrackItem
+              resource_id="PEGccV-NOm8"
+              service="youtube"
+            >
+              <div
+                style={
+                  Object {
+                    "marginBottom": "1rem",
+                  }
+                }
+              >
+                <iframe
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen={true}
+                  frameBorder="0"
+                  height="162"
+                  src="https://www.youtube.com/embed/PEGccV-NOm8?controls=0&amp;showinfo=0"
+                  title="YouTube Player"
+                  width="288"
+                />
+              </div>
+            </TrackItem>
+          </div>
+        </div>
+      </Track>
+    </div>
   </div>
-</div>
+</Draft>
 `;

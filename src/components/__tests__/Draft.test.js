@@ -1,17 +1,18 @@
 import React from 'react';
-import ReactTestRenderer from 'react-test-renderer';
+import Enzyme, { shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import jsonData from '../../tracks.json';
 import Draft from '../Draft';
 
-const item = { 
-  "id": 1,
-  "name": "Bodak Yellow", 
-  "artist": "Cardi B",
-  "image": "https://i.scdn.co/image/c6f9f7b2e71ae63388ec99bcc658eb173ed97bcc",
-  "spotify_id": "2771LMNxwf62FTAdpJMQfM",
-  "youtube_id": "PEGccV-NOm8"
-}
+Enzyme.configure({ adapter: new Adapter() });
 
 it('renders a playlist draft', () => {
-  const component = ReactTestRenderer.create(<Draft items={[item]} />);
+  const component = shallow(<Draft items={jsonData.slice(0, 1)} />);
+  expect(component).toMatchSnapshot();
+});
+
+it('updates playlist name after name change', () => {
+  const component = mount(<Draft items={jsonData.slice(0, 1)} />)
+  component.find('input').simulate('change', { target: { value: 'Foobar' } });
   expect(component).toMatchSnapshot();
 });
