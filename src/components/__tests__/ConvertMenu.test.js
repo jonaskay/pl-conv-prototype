@@ -1,8 +1,16 @@
 import React from 'react';
-import ReactTestRenderer from 'react-test-renderer';
+import Enzyme, { shallow, mount } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import ConvertMenu from '../ConvertMenu';
 
+Enzyme.configure({ adapter: new Adapter() });
+
 it('renders a menu', () => {
-  const component = ReactTestRenderer.create(<ConvertMenu />);
+  const component = shallow(<ConvertMenu />);
   expect(component).toMatchSnapshot();
+});
+
+describe('getSpotifyAuthorizeUrl', () => {
+  const component = shallow(<ConvertMenu />);
+  expect(component.instance().getSpotifyAuthorizeUrl()).toMatchSnapshot();
 });

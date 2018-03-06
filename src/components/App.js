@@ -10,16 +10,40 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {fileData: null, playlistName: ''};
+    let accessToken = this.getAccessTokenFromHash(window.location.hash);
+    if (accessToken) {
+      this.state = {
+        convertToSpotify: true,
+        fileData: this.props.demoData, 
+        playlistName: this.props.demoName,
+        spotifyAccessToken: accessToken
+      }
+    } else {
+      this.state = {
+        convertToSpotify: false,
+        fileData: null, 
+        playlistName: '',
+        spotifyAccessToken: accessToken
+      }
+    }
+  }
+
+  getAccessTokenFromHash(hash) {
+    return hash.split('&')[0].split('=')[1] || '';
   }
 
   handleFileSubmit = (e) => {
     e.preventDefault();
+
     this.setState({fileData: this.props.demoData, playlistName: this.props.demoName});
   }
   
   handleNameChange = (e) => {
     this.setState({playlistName: e.target.value});
+  }
+
+  handleSpotifyToggle = () => {
+    this.setState({convertToSpotify: !this.state.convertToSpotify});
   }
 
   render() {
@@ -37,7 +61,10 @@ class App extends Component {
             onNameChange={this.handleNameChange} />
         </div>
         <div className="App-col2">
-          <ConvertMenu />
+          <ConvertMenu 
+            convertToSpotify={this.state.convertToSpotify}
+            spotifyAuthenticated={this.state.spotifyAccessToken}
+            onSpotifyToggle={this.handleSpotifyToggle} />
           <ConvertButton />
         </div>
       </div>

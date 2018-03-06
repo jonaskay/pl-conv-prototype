@@ -6,9 +6,10 @@ import jsonData from '../../tracks.json';
 
 Enzyme.configure({ adapter: new Adapter() });
 
+const shallowed = shallow(<App demoName="foobar" demoData={jsonData.slice(0, 1)} />);
+
 it('renders the app', () => {
-  const component = shallow(<App demoName="foobar" demoData={jsonData.slice(0, 1)} />);
-  expect(component).toMatchSnapshot();
+  expect(shallowed).toMatchSnapshot();
 });
 
 it('renders file data after file form submit', () => {
@@ -18,11 +19,39 @@ it('renders file data after file form submit', () => {
   expect(component).toMatchSnapshot();
 })
 
+it('renders file data after Spotify authentication', () => {
+  shallowed.setState({accessToken: 'foobar'});
+
+  expect(shallowed).toMatchSnapshot();
+})
+
 it('updates playlist name after name change', () => {
   const component = mount(<App />);
   component.setState({fileData: jsonData.slice(0, 1), fileName: 'Foobar'});
   component.find('.DraftNameInput').simulate('change', { target: { value: 'Baz' } });
 
   expect(component).toMatchSnapshot();
+});
+
+it('updates checkbox value after Spotify toggle', () => {
+  const component = mount(<App />);
+  component.setState(
+    {fileData: jsonData.slice(0, 1), fileName: 'Foobar', spotifyAccessToken: 'foobar'}
+  );
+  component.find('.ConvertMenuField-input').first().simulate('click');
+
+  expect(component).toMatchSnapshot();
+});
+
+describe('getAccessTokenFromHash', () => {
+  it('returns access token', () => {
+    const accessToken = shallowed.instance().getAccessTokenFromHash('#access_token=foobar&baz=qux');
+    expect(accessToken).toBe('foobar');
+  });
+
+  it('returns an empty string', () => {
+    const accessToken = shallowed.instance().getAccessTokenFromHash('');
+    expect(accessToken).toBe('');  
+  })
 });
 

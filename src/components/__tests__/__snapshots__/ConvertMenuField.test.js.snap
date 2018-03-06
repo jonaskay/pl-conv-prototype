@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders a field 1`] = `
+exports[`renders a disabled button 1`] = `
 <div
   className="ConvertMenuField"
 >
   <div>
     <input
+      className="ConvertMenuField-input"
       disabled={true}
       type="checkbox"
     />
@@ -23,10 +24,70 @@ exports[`renders a field 1`] = `
   <div>
     <button
       className="ConvertMenuField-button"
+      disabled={true}
     >
       Connect with 
       Foobar
     </button>
   </div>
+</div>
+`;
+
+exports[`renders a field 1`] = `
+<div
+  className="ConvertMenuField"
+>
+  <div>
+    <input
+      className="ConvertMenuField-input"
+      disabled={true}
+      onClick={[Function]}
+      type="checkbox"
+    />
+    <label
+      style={
+        Object {
+          "color": "rgba(255,255,255,.5)",
+          "marginLeft": ".5rem",
+        }
+      }
+    >
+      Foobar
+    </label>
+  </div>
+  <div>
+    <button
+      className="ConvertMenuField-button"
+      onClick={[Function]}
+    >
+      Connect with 
+      Foobar
+    </button>
+  </div>
+</div>
+`;
+
+exports[`renders an authenticated field 1`] = `
+<div
+  className="ConvertMenuField"
+>
+  <div>
+    <input
+      className="ConvertMenuField-input"
+      disabled={false}
+      type="checkbox"
+    />
+    <label
+      style={
+        Object {
+          "color": "rgba(255,255,255,.5)",
+          "marginLeft": ".5rem",
+        }
+      }
+    >
+      Foobar
+    </label>
+  </div>
+  <div />
 </div>
 `;

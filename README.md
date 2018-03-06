@@ -30,7 +30,7 @@ yarn test
 
 ## To-do
 
-* Ability to authenticate with Spotify and Google
+* Ability to authenticate Google
 * Ability to create playlists to Spotify and YouTube 
 
 ## Acknowledgments

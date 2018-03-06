@@ -16,3 +16,9 @@
   font-size: .875rem;
   padding: .5rem .75rem;
 }
+
+.ConvertMenuField-button:disabled {
+  border-color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.5);
+  cursor: not-allowed;
+}
